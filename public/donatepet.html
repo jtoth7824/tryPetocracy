@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Donate</title>
+</head>
+
+<body>
+    <h1>Donate Pet Page</h1>
+
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <h2>Donations</h2>
+            <form class="donate">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Amount Requested</label>
+                <input type="input" class="form-control" id="amountRequested">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Amount Raised So Far</label>
+                <input type="input" class="form-control" id="amountRaised">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Your new Donation Amount</label>
+                <input type="input" class="form-control" id="donation" placeholder="Donation Amount" required>
+              </div>
+              <br>
+              <br>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Card Type</label>
+                <input type="input" class="form-control" id="cardType" placeholder="Card Type" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Name on Card</label>
+                <input type="input" class="form-control" id="nameOnCard" placeholder="Name on Card" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Card Number</label>
+                <input type="input" class="form-control" id="cardNumber" placeholder="Card Number" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Security Code</label>
+                <input type="input" class="form-control" id="securityCode" placeholder="Security Code" required>
+              </div>
+              <div>
+                <label for="expirationDate">Card Expiration (month and year):</label>
+                <input type="month" id="expirationDate" name="expirationDate">
+              </div>              
+              <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span> <span class="msg"></span>
+              </div>
+              <br>
+              <br>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <br>
+            <!-- <p>Or log in <a href="/login">here</a></p> -->
+          </div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/donatepet.js"></script>
+</body>
+
+</html>
